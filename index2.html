@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Strumenti - Calcolatore di Forza della Password</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <!-- Banner Cookie -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Questo sito utilizza i cookie per migliorare l'esperienza utente. Clicca su "Accetta" per acconsentire all'uso dei cookie.</p>
+        <button id="accept-cookies">Accetta</button>
+    </div>
+
+    <header>
+        <h1>Privacy Strumenti</h1>
+    </header>
+
+    <main>
+        <section class="content-container">
+            <div class="content-section section-blue">
+                <h2>Calcolatore di Forza della Password</h2>
+                <p>
+                    Proteggere i tuoi account online è essenziale. Una password sicura è la prima linea di difesa contro gli attacchi. 
+                    Usa questo strumento per verificare quanto è forte la tua password.
+                </p>
+            </div>
+
+            <div class="content-section section-yellow">
+                <h3>Inserisci la tua password:</h3>
+                <input type="password" id="password-input" placeholder="Inserisci una password" oninput="checkPasswordStrength()">
+                <div id="password-strength" class="strength-text"></div>
+                <div id="strength-bar" class="strength-bar"></div>
+            </div>
+        </section>
+
+        <!-- Generatore di Password Sicure -->
+        <section class="password-generator">
+            <div class="content-section section-green generator-section">
+                <h3>Generatore di Password Sicure</h3>
+                <p>Clicca su "Genera" per creare una password sicura automaticamente.</p>
+                <input type="text" id="generated-password" readonly placeholder="La password sicura verrà qui">
+                <div class="buttons-container">
+                    <button onclick="generateSecurePassword()">Genera</button>
+                    <button onclick="copyPassword()">Copia</button>
+                </div>
+            </div>
+
+            <!-- Bottone per tornare indietro alla pagina index.html -->
+            <div class="back-button-container">
+                <button onclick="window.location.href='index.html'">Torna alla prima pagina</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Privacy e Tecnologia. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
